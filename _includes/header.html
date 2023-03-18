@@ -23,3 +23,18 @@
     </nav>
   </div>
 </header>
+
+
+<div class="wrapper" id="domain-expiration-notice"
+style="background-color:rgb(248, 225, 225); border:1px solid red; border-radius:7px; margin-top:15px; display:none;">
+<p style="margin-top: 15px">域名 zcteo.top 将在2023年5月1日停止服务，且该域名下内容不再更新，请访问新域名 <a href="https://zcteo.cn"
+    target="_self">zcteo.cn</a></p>
+</div>
+
+<script>
+var domain = document.domain
+if (domain === 'zcteo.top') {
+  var domainNotice = document.getElementById('domain-expiration-notice')
+  domainNotice.style.display = 'block'
+}
+</script>
